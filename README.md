@@ -13,34 +13,28 @@ One of this program's weaknesses is its inability to predict more than 1 day in 
 
 
 
-# Title
-# About The Project
+# stocksRNN
+//# About The Project
 ...
+# Introduction
 
+A project report PDF is included here which contains the underlying calculus, among other things.
 
-INTRODUCTION
-------------
-
-A project report PDF is included here which contains the underlying calculus, among other things
-
-
-GETTING STARTED
----------------
-
+# Getting started
 ## Requirements
-## Recommended modules
+//## Recommended modules
 [Alpha Vantage API](https://www.alphavantage.co/)
 ## Installation
 Use the package manager **pip** to install ...
-'''bash
+```bash
 pip install x
-'''
-'''sh
+```
+```sh
 $ pip install x
-'''
-'''python
+```
+```python
 import x
-'''
+```
 ## Configuration
 * learning rate
 - not too small
@@ -53,4 +47,5 @@ There is a warning concerning the line "close_prices = close_prices[:, np.newaxi
  FutureWarning: Support for multi-dimensional indexing (e.g. `obj[:, None]`) is deprecated and will be removed in a future version.  Convert to a numpy array before indexing instead.
   close_prices = close_prices[:, np.newaxis]
 # Contact
+Email: trentr314@gmail.com
 # Acknowledgments
