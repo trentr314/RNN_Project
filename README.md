@@ -41,7 +41,7 @@ import x
 - not too large
 * **hidden layer** size
 ## Usage
-Run as any Python program in bash with 'python3 stocksRNN.py'
+Run as any Python program in bash with `python3 stocksRNN.py`
 ## Other notes
 There is a warning concerning the line "close_prices = close_prices[:, np.newaxis]".  It does not currently interfere with the program's function and research into the message gave no useful results and an alternative could not be found.  It may need to be fixed at a later date.
  FutureWarning: Support for multi-dimensional indexing (e.g. `obj[:, None]`) is deprecated and will be removed in a future version.  Convert to a numpy array before indexing instead.
