@@ -12,12 +12,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: setup python
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@master # THIS IS IMPORTANT
+      - uses: actions/setup-python@v2 # THIS IS IMPORTANT
         with:
-          python-version: 3.10.6 #install the python needed
-      - name: install dependencies
-        run: pip install -r requirements.txt
+          python-version: '3.8'
+      - name: Test
+        with:
+          deps_list: 'requirement'
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
