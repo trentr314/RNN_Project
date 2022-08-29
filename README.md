@@ -16,7 +16,7 @@ If you would like to run it on your own machine:
 - If you are on Windows using Git Bash, there is a trick to [using the python command in Git Bash](https://itecnote.com/tecnote/python-not-working-in-the-command-line-of-git-bash/).
 
 # Requirements
-The [Alpha Vantage API](https://www.alphavantage.co/) was used to retrieve stock price data.  I have publicly hosted the data I used on GitHub, so the .py file will access it from any machine with internet access.  You do not need to request any data from the API yourself.
+The [Alpha Vantage API](https://www.alphavantage.co/) was used to retrieve stock price data.  I have publicly hosted the data I used on GitHub, so the .py file will access it from any machine with internet access.  You do not need to request any data from the API yourself.  However, for reference, other/alpha_vantage.py does contain the code I used to retrieve the data.
 
 Modules that require installation (as in requirements.txt):
 - matplotlib
@@ -62,6 +62,8 @@ Run as any Python program in bash with `python3 RNN_project.py`
 Output will occasionally overflow and give results of NaN.  This happens somewhat randomly due to random initialization of weights.  This is most likely to happen if you choose an unnecessarily high hidden layer size or a learning rate that is too high.  If this happens, please just be patient and try it a couple more times.
 
 One of this program's weaknesses is its inability to predict more than 1 day in the future.  More advanced techniques would have to be implemented to predict multiple timesteps of data without the actual value of the previous timestep.  This prediction of multiple timesteps is a potential subject of future work.
+
+As mentioned in Requirements, for reference, other/alpha_vantage.py contains the code I used to retrieve the data from the Alpha Vantage API.
 
 # Contact
 Trent Rogers
