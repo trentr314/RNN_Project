@@ -56,7 +56,7 @@ n_batches = int(epoch_size/batch_size)
 
 
 # file is a csv created from data pulled from alphavantage, and hosted on my GitHub publicly.
-openurl = urllib.request.urlopen("https://raw.githubusercontent.com/trentr314/MLdata/master/IBM_full_daily_adjusted.csv")
+openurl = urllib.request.urlopen("https://raw.githubusercontent.com/trentr314/RNN_Project/master/data/IBM_full_daily_adjusted.csv")
 
 df = pd.read_csv(openurl)
 # we use only the closing price
