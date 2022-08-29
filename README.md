@@ -41,7 +41,7 @@ Hyperparameters are hard-coded in lines 42-59.  They include
   The number of nodes in the hidden layer.  Set to 6 by default.
 - learning rate
 
-  The learning rate is 3\*10^-11.  I found this to be a good balance.  If you make it too small, say x\*10^-15, backpropogation will have a tiny, insignificant effect on the weights, and the algorithm won't really learn anything.  If you make it too large, say x\*10^-5, the algorithm will fly all over the place, constantly overcorrecting and never converging.
+  The learning rate is 3\*10^-11.  I found this to be a good balance.  If you make it too small, backpropogation will have a tiny, insignificant effect on the weights, and the algorithm won't really learn anything.  If you make it too large, the algorithm will fly all over the place, constantly overcorrecting and never converging.
 - number of epochs
 
   The number of passes the algorithm makes over the entire dataset.  I have this set to 200 by default.  Stock prices are not easily predicted and this algorithm needs to go through the dataset many times to learn significantly.
