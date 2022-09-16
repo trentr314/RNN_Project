@@ -15,6 +15,16 @@ If you would like to run it on your own machine:
 
 - If you are on Windows using Git Bash, there is a trick to [using the python command in Git Bash](https://itecnote.com/tecnote/python-not-working-in-the-command-line-of-git-bash/).
 
+Use your bash command line to navigate to the local directory where you would like the project to be and enter 
+```bash
+$ git clone https://github.com/trentr314/RNN_Project.git
+````
+Now in the directory with the downloaded Python file, you can run the program with bash command
+```bash
+$ python3 RNN_project.py
+````
+
+
 # Requirements
 The [Alpha Vantage API](https://www.alphavantage.co/) was used to retrieve stock price data.  I have publicly hosted the data I used on GitHub, so the .py file will access it from any machine with internet access.  You do not need to request any data from the API yourself.  However, for reference, other/alpha_vantage.py does contain the code I used to retrieve the data.
 
@@ -55,8 +65,6 @@ Hyperparameters are hard-coded in lines 42-59.  They include
 
   Be careful modifying epoch size and batch size, because the number of batches is calculated as int(epoch_size/batch_size).  Epoch size must be a multiple of batch size or this will cause problems.
 
-# Usage
-Run as any Python program in bash with `python3 RNN_project.py`
 
 # Other notes
 Output will occasionally overflow and give results of NaN.  This happens somewhat randomly due to random initialization of weights.  This is most likely to happen if you choose an unnecessarily high hidden layer size or a learning rate that is too high.  If this happens, please just be patient and try it a couple more times.
